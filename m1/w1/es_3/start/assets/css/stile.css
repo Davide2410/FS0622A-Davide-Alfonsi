@@ -1,0 +1,162 @@
+/* IMPOSTAZIONI GENERALI */
+
+:root{
+    --main:#00A0C6;
+    --sec:#6A8A93;
+    --acc:#027794;
+
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+hr{
+    display: none;
+}
+
+a{
+    color: red;
+}
+
+h2{
+    font-size: 25px;
+}
+p{
+    line-height: 20px;
+}
+
+/* HEADER */
+header{
+    background-color: var(--main);
+    padding: 20px;
+    text-align: center;
+    border-bottom:3px solid var(--acc) ;
+}
+header h1{
+    color: white;
+    text-transform: uppercase;
+    font-size: 30px;
+    line-height: 1.5;
+}
+header span{
+    background-color: white;
+    color: var(--acc);
+    
+}
+
+header h2{
+    margin-top: 20px;
+    font-variant: small-caps;
+}
+
+/* MAIN */
+main{
+    padding: 20px;
+}
+
+main h2{
+    color: var(--acc);
+    text-transform: uppercase;
+    text-align: center;
+}
+
+main b{
+    font-weight: 800;
+}
+
+figure{
+    justify-content: center;
+    text-align: center;
+}
+figure img{
+    border: 1px solid lightgray;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+address{
+    padding: 10px;
+    line-height: 30px;
+}
+
+
+blockquote{
+    height: fit-content;
+    width: fit-content;
+    padding: 20px;
+    background-color: lightgray;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/* ELEMENTI NEL MAIN */
+section{
+    text-align: left;
+}
+div{
+    padding: 10px;
+}
+div h2{
+    margin-bottom: 20px;
+}
+ p strong{
+    color: var(--acc);
+ }
+ main section{
+    border-bottom: 1px dashed grey;
+    padding: 20px;
+ }
+
+ div h3{
+    font-weight: bold;
+    margin-top: 15px;
+    margin-bottom: 15px;
+ }
+
+ p mark{
+    background-color: var(--acc);
+    color: white;
+ }
+
+ ul{
+    margin-top: 20px;
+ }
+ ul li{
+    margin-bottom: 5px;
+    margin-left: 40px;
+ }
+
+
+ dl dt{
+    margin-bottom: 5px;
+    margin-left: -20px;
+ }
+ dl dd{
+    margin-bottom: 5px;
+ }
+
+ dd strong{
+    color: var(--acc);
+ }
+ 
+
+/* FOOTER */
+footer{
+    border-top: 3px solid var(--main);
+    background-color: rgba(55, 54, 54, 0.995);
+    color: white;
+    font-size: 12px;
+    text-align: center;
+}
+
+footer p{
+    line-height: 30px;
+}
+
+footer p small{
+    color: gray;
+}
