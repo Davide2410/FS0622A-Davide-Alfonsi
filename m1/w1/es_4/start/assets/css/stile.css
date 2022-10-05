@@ -1,0 +1,297 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+/* IMPOSTAZIONI GENERALI */
+body{
+    background-image: url('/start/assets/img/sfondo.png');
+    background-size: contain;
+    font-family: 'Poppins';
+}
+
+hr{
+    display: none;
+}
+
+h1{
+    font-size: 40px;
+}
+
+article{
+    line-height: 1.2;
+}
+
+p{
+    font-size: 15px;
+}
+
+/* HEADER */
+header{
+    padding: 30px;
+    background-color: #007D9F;
+    color: white;
+    justify-content: center;
+    text-align: center;
+    margin: 30px;
+    box-shadow: black 0px 10px 30px -10px;
+}
+
+header img{
+    height: 60px;
+    width: 250px;
+}
+
+header div p{
+    text-transform: uppercase;
+    margin: 20px;
+    font-weight: 800;
+}
+
+nav ul{
+    list-style: none;
+    line-height: 1.5;
+}
+
+nav li a{
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+
+nav li a::before{
+    content: '=> ';
+}
+nav li a::after{
+    content: ' <=';
+}
+
+/* MAIN */
+
+main{
+    height: fit-content;
+    width: fit-content;
+    background-color: white;
+    margin: 30px;
+    padding: 20px;
+    box-shadow: black 0px 10px 30px -10px;
+}
+
+/* ELEMENTI NEL MAIN - ARTICLE */
+article h1{
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+
+article p:first-of-type{
+    margin-bottom: 20px;
+    font-size: 18px;
+    color: grey;
+}
+
+article p:first-of-type::before{
+font-family: "Font Awesome 5 Free"; font-weight: 600; content:"\f14b" ;
+}
+article span::before{
+font-family: "Font Awesome 5 Free"; font-weight: 600; content:"\f017" ;
+}
+
+article p{
+    font-size: 18px;
+    line-height: 1.3;
+    margin-bottom: 15px;
+}
+
+p strong{
+    color: #AA2C7B;
+    font-weight: 600;
+}
+
+
+article ul{
+    margin: 20px 0;
+    font-size: 15px;
+    line-height: 1.9;
+}
+
+article ul li{
+    margin-left: 40px;
+}
+
+li code{
+    height: fit-content;
+    width: fit-content;
+    border: 1px solid grey;
+    background-color: lightgrey;
+    padding: 3px;
+    border-radius: 10px;
+}
+
+article h2{
+    font-size: 20px;
+}
+
+
+article ol{
+    margin: 20px 0;
+    font-size: 18px;
+}
+
+ol li{
+    margin-left: 40px;
+}
+
+/* TABELLE */
+table{
+    justify-content: center;
+    text-align: center;
+    border-bottom: 2px solid #4575CE;
+    font-size: 15px;
+    padding: 20px;
+    margin: 20px;
+    width: fit-content;
+}
+
+table caption{
+    font-weight: bold;
+}
+
+th{
+    background-color: #4575CE;
+    color: white;
+    padding: 15px;
+    word-wrap: break-word;
+}
+
+td{
+    text-align: center;
+}
+
+tbody tr{
+    height: 50px;
+}
+
+tbody tr:nth-child(even){
+    background-color: #f2f2f2;
+    border-top: 1px solid grey;
+    border-bottom: 1px solid grey;
+}
+a{
+    color: #00A7BD;
+}
+
+iframe{
+    width: 100%;
+    height: 300px; 
+    border-radius: 50px;
+}
+/* FORM */
+
+section{
+    height: fit-content;
+    width: fit-content;
+    background-color: lightgrey;
+    padding: 20px;
+    margin: 20px;
+    margin-bottom: 30px;
+}
+section h2{
+    text-align: center;
+    font-size: 25px;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+section p{
+    margin-bottom: 20px;
+    font-size: 15px;
+    color: black !important;
+}
+
+section p::before{
+    content: '' !important;
+}
+
+fieldset{
+    justify-content: center;
+    text-align: center;   
+}
+
+fieldset input{
+    border: none;
+    border-bottom: 1px dashed grey;
+    height: 25px;
+}
+
+fieldset button{
+    border: none;
+    background-color: #265DC6;
+    color: white;
+    padding: 5px;
+}
+
+/* ELEMENTI NELL' ASIDE */
+
+aside{
+    justify-content: center;
+    align-items: center;
+}
+
+aside h2{
+    text-align: center;
+    font-size: 25px;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+aside div{
+    height: 8vh;
+    width:  70vw ;
+    background-color: lightgray;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+aside a{
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+aside p::before{
+    font-family: "Font Awesome 5 Free"; font-weight: 600; content:"\f02b " ;
+    margin-right: 5px;
+}
+
+aside p:last-child{
+    text-align: right;
+    font-size: 13px;
+}
+
+aside p:last-child::before{
+    font-family: "Font Awesome 5 Free"; font-weight: 600; content:" \f073" ;  
+    margin-left: 5px;
+}
+
+/* FOOTER */
+footer{
+    background: linear-gradient(  #005566 , #253E40);
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    margin: 30px;
+    color: white;
+    font-size: 12px;
+    letter-spacing: 1px;
+    box-shadow: black 0px 10px 30px -10px;
+    width: fit-content;
+}
+
+footer address{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+address a{
+    color: #FF00FE;
+}
