@@ -1,0 +1,50 @@
+*{
+    box-sizing: border-box;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Bree Serif';
+}
+
+#testoAlternato{
+    border: 2px solid grey;
+    padding: 20px 120px 20px 20px;
+    line-height: 1.5;
+}
+
+.parole{
+    color: #6C8799;
+    position: relative;
+   
+}
+
+.parole i{
+    position: absolute;
+    top: 0;
+    color: transparent;
+    animation: slide 6s infinite 0s;
+    margin-left: 5px;
+    width: 150px;
+}
+
+
+.parole i:nth-child(2){
+    animation-delay: 2s;
+
+}
+.parole i:last-child{
+    animation-delay: 4s;
+
+}
+
+@keyframes slide {
+
+    0%{color:transparent; top:-20px}
+    25%{color:#6C8799 ; top:0px}
+    50%{color:transparent ; top:20px}
+     
+}
