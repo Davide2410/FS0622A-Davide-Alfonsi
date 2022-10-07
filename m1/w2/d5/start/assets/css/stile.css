@@ -25,9 +25,9 @@ nav ul li {
     color: #e42424; 
     font-size: 3rem;
 }
-a:link ,
-a:visited{
-    color: #e42424;
+
+nav ul li a{
+    color: #000;
     text-decoration: none;
 }
 #menuTel i{
