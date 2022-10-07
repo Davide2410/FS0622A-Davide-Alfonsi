@@ -11,17 +11,6 @@ body{
     font-family: 'Fira Sans' , sans-serif;
     line-height: 1.8;
 }
-h1{
-    font-size:  4rem;
-   line-height: 1; 
-}
-h2{
-   font-size:  3.5rem;
-   line-height: 1.1; 
-}
-h3{
-    line-height: 1.2;
-}
 p{
     margin-bottom: 15px;
 }
@@ -100,7 +89,6 @@ main h2 {
 }
 main h3 {
     font-size: 2.7rem;
-    margin-bottom: 0.5em;
     line-height: 1;
 }
 main 
@@ -157,9 +145,15 @@ span .lni{
     width: 90%;
     margin-bottom: 20px;
 }
-#skill p{
-    margin-bottom:15px;
+
+#skill .competenze h3{
+    line-height: 3;
 }
+
+#skill .competenze span{
+    float: left;
+}
+
 /* FINE PAGINA INDEX */
 /* PAGINA CHI-SIAMO */
 /* MAIN */
