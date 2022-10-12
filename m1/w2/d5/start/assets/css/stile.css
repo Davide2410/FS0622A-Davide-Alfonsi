@@ -340,13 +340,7 @@ address{
     #skill img{
         width: 45%;
     }
-    .computer{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-    }
-
+   
     #collegamenti{
         display: flex; 
     }
