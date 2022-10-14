@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Davide">
+    <meta name="description" content="creazione calcolatrice js , html e css">
+    <title>CALCOLATRICE</title>
+    <!-- GOOGLE FONT -->
+    <link href="https://fonts.googleapis.com/css2?family=Lexend&family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <section id="container">
+          <!-- ICON PHONE  -->
+        <div id="icon_phone">
+            <span>16:06</span> 
+            <i class="fab fa-whatsapp"></i>
+            <i class="fab fa-instagram"></i>
+          </div>
+          <!-- FRIST PAGE APP -->
+          <div id="cont_btn" class="pointer">
+            <button id="app" class="pointer" onclick="openApp()"><i class="fas fa-calculator"></i></button>
+              <span>Calcolatrice</span>
+          </div>
+          <!-- CALCOLATRICE -->
+          <div id="cont_calc">
+            <input type="text" name="display" id="display" class="display" placeholder="0">
+              <div class="tastiera">
+
+              <input type="button" value="C" onclick="reset()" class="button grey">
+              <input type="button" id="&rarr;" value="&rarr;" onclick="cancella();" class="button grey">
+              <input type="button" id="/" value="&divide;" onclick="digita(this.id)" class="button orange">
+              <input type="button" id="*" value="&times;" onclick="digita(this.id)" class="button orange">
+              
+              <input type="button" id="7" value="7" onclick="digita(this.id)" class="button dark">
+              <input type="button" id="8" value="8" onclick="digita(this.id)" class="button dark">
+              <input type="button" id="9" value="9" onclick="digita(this.id)" class="button dark">
+              <input type="button" id="+" value="&#43;" onclick="digita(this.id)" class="button orange">
+            
+
+
+              <input type="button" id="4" value="4" onclick="digita(this.id)" class="button dark">
+              <input type="button" id="5" value="5" onclick="digita(this.id)" class="button dark">
+              <input type="button" id="6" value="6" onclick="digita(this.id)" class="button dark">
+              <input type="button" id="-" value="&#8722;" onclick="digita(this.id)" class="button orange">
+                
+              
+                      
+              
+              <input type="button" id="1" value="1" onclick="digita(this.id)" class="button dark">
+              <input type="button" id="2" value="2" onclick="digita(this.id)" class="button dark">
+              <input type="button" id="3" value="3" onclick="digita(this.id)" class="button dark">
+              <button value="=" onclick="operazione()" class="uguale button orange">=</button>
+                  
+              
+              
+              <input type="button" id="0" value="0" onclick="digita(this.id)" class="button dark">
+              <input type="button" id="00" value="00" onclick="digita(this.id)" class="button dark">
+              <input type="button" id="." value="." onclick="digita(this.id)" class="button dark">
+            
+              
+            </div>
+          </div>
+          <!-- BOTTONE TELEFONO (TORNA INDIETRO) -->
+            <div id="close" class="pointer"  onclick="closeApp()"></div>
+        </div>
+        <!-- CHANGE COVER PHONE -->
+        <div id="cover_container">
+          <div class="spin pointer">
+          <i class="fas fa-cog" id="spin"></i>
+        </div>
+        <div class="change_cover">
+          <i class="fas fa-times" id="close_color"></i>
+          <button class="btn_cover red"></button>
+          <button class="btn_cover green"></button>
+          <button class="btn_cover purple"></button>
+          <button class="btn_cover reset"><i class="fas fa-redo-alt"></i></button>
+        </div> 
+  </section>
+  <!-- JAVA SCRIPT -->
+    <script src="assets/js/script.js"></script>
+  <!-- FONTAWSOME -->
+    <script src="https://kit.fontawesome.com/f8133be29a.js" crossorigin="anonymous"></script>
+</body>
+</html>
