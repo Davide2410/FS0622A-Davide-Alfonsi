@@ -22,6 +22,13 @@ let btnApp = document.getElementById('app');
 let contCalc = document.getElementById('cont_calc');
 let close = document.getElementById('close');
 
+function eventHandler(){
+    hidden();
+    openApp();
+    closeApp();
+}
+eventHandler();
+
 function hidden(){
     contCalc.style.display = 'none';
 }
@@ -33,14 +40,9 @@ function closeApp(){
     contCalc.style.display = 'none';
     contApp.style.display ='flex';
 }
-function eventHandler(){
-    hidden();
-    openApp();
-    closeApp();
-}
-eventHandler();
+
 // CAMBIA COLORE ALLA COVER
-let cover = document.getElementById('calculator');
+let cover = document.getElementById('container');
 let btnRed = document.querySelector('.red');
 btnRed.addEventListener('click', ()=>{
     cover.style.outlineColor = '#ff0000';
