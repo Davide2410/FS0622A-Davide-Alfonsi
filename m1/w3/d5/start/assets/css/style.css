@@ -16,7 +16,7 @@ body{
   cursor: pointer;
 } 
 /* STRUTTURA TELEFONO*/
-#container{
+#phone{
   height: 350px;
   width: 180px;
   background-color: rgb(0, 0, 0, 0.8);
