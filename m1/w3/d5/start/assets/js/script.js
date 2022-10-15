@@ -42,7 +42,7 @@ function closeApp(){
 }
 
 // CAMBIA COLORE ALLA COVER
-let cover = document.getElementById('phone');
+let cover = document.getElementById('container');
 let btnRed = document.querySelector('.red');
 btnRed.addEventListener('click', ()=>{
     cover.style.outlineColor = '#ff0000';
