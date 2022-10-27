@@ -3,37 +3,37 @@ let btnOpen = document.getElementById('btnOpen');
 let menu = document.getElementById('menu');
 
 
-btnOpen.addEventListener('click' , function(){
-      if(menu.style.display == "none"){
+btnOpen.addEventListener('click', function () {
+    if (menu.style.display == "none") {
         menu.style.display = 'block';
-      }else{
+    } else {
         menu.style.display = 'none';
-      }
+    }
 })
 
 
 // -----------------------------------------------------------------------
 let title = document.getElementById('title');
 
-document.getElementById('grande').addEventListener('click' , function(){
+document.getElementById('grande').addEventListener('click', function () {
     title.style.fontSize = '100px';
-}); 
-document.getElementById('colore').addEventListener('click' , function(){
+});
+document.getElementById('colore').addEventListener('click', function () {
     title.style.color = 'red';
 });
-document.getElementById('maiuscolo').addEventListener('click' , function(){
+document.getElementById('maiuscolo').addEventListener('click', function () {
     title.style.textTransform = 'uppercase';
 });
-document.getElementById('nascondi').addEventListener('click' , function(){
+document.getElementById('nascondi').addEventListener('click', function () {
     title.style.visibility = 'hidden';
 });
-document.getElementById('mostra').addEventListener('click' , function(){
+document.getElementById('mostra').addEventListener('click', function () {
     title.style.visibility = 'visible';
 });
 
 // -----------------------------------------------------------------------
 
-var lista = document.querySelectorAll('ol > li');
+var lista = document.querySelectorAll('#lista > li');
 
 for (i = 0; i < lista.length; i++) {
 
