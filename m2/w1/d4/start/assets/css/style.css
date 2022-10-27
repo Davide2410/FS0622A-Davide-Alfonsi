@@ -1,0 +1,65 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    padding: 20px 30px;
+}
+
+
+#btnOpen{
+    background-color: blue;
+    border: none;
+    padding: 10px;
+}
+#btnOpen:focus{
+    background-color: aqua;
+    color: white;
+}
+
+#menu{
+    background-color: rgb(177, 123, 228);
+    width: 120px;
+    position: absolute;
+    display: none;
+}
+#menu ul{
+    list-style: none;
+    cursor: pointer;
+}
+
+#menu ul li{
+    padding: 10px;
+}
+
+#menu ul li:hover{
+    background-color: lightgrey;
+}
+.container-2{
+    margin-top: 100px;
+}
+
+.container-2 #title{
+    text-align: center;
+}
+
+.container-3{
+    margin-top: 50px;
+}
+
+.lista_red{
+    color: red;
+    cursor: pointer;
+}
+
+.line{
+    text-decoration: line-through;
+    color: red;
+}
+
+.line:hover{
+    text-decoration: line-through;
+    color: lightgray;
+}
