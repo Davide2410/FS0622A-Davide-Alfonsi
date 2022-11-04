@@ -1,0 +1,8 @@
+@function changeColor($base-colore) {
+    @if(lightness($base-colore) <= 50%) {
+        @return white;
+    }
+    @else {
+        @return black;
+    }
+}
