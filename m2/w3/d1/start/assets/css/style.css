@@ -1,0 +1,68 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+ul{
+    list-style: none;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.container .container_col{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+.container .container_col .form{
+    margin-right: 50px;
+}
+.container .container_col .form form{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid gray;
+    border-radius: 10px;
+    padding: 50px;
+}
+.container .container_col .form form input{
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid gray;
+}
+
+.container .container_col .form .d-flex #aggiungi{
+    padding: 10px;
+    color: white;
+    border: none;
+    background-color: rgba(8, 101, 8, 0.7);
+}
+.container .container_col .form .d-flex #pulisci{
+    padding: 10px;
+    color: white;
+    border: none;
+    background-color: rgb(241, 85, 85);
+}
+.container .container_col .container_lista{
+    border: 1px solid grey;
+    background-color: rgb(240, 240, 187);
+    border-radius: 10px;
+    padding: 50px;
+    min-width: 280px;
+}
+.container .container_col .container_lista #lista li{
+    margin-bottom: 10px;
+}
