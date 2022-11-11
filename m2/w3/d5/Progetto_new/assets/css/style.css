@@ -1,0 +1,30 @@
+/* IMPOSTAZIONI GENERALI */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/* EFFECT ICON INPUT */
+input {
+    background: #ecf0f3;
+    padding: 10px;
+    padding-left: 20px;
+    height: 40px;
+    font-size: 14px;
+    border-radius: 50px;
+    box-shadow: inset 6px 6px 8px #cbced1, inset -6px -6px 8px white;
+  }
+i{
+    color: rgb(243, 91, 91);
+    cursor: pointer;
+}
+.input-container .icon-error{
+    top: 13px;
+    right: 50px;
+}
+.input-container .error-icon{
+    top: 43px;
+    right: 50px;
+}
+
+  

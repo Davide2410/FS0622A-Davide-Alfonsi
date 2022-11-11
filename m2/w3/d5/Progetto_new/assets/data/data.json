@@ -1,0 +1,34 @@
+{
+  "elenco": [
+    {
+      "nome": "Francesco",
+      "cognome": "Totti",
+      "id": 10
+    },
+    {
+      "nome": "Eleonora",
+      "cognome": "Di Lullo",
+      "id": 11
+    },
+    {
+      "nome": "Lorenzo",
+      "cognome": "Alfonsi",
+      "id": 16
+    },
+    {
+      "nome": "Davide",
+      "cognome": "Alfonsi",
+      "id": 17
+    },
+    {
+      "nome": "Giulio",
+      "cognome": "Totti",
+      "id": 18
+    },
+    {
+      "nome": "Davide",
+      "cognome": " Di Lullo",
+      "id": 19
+    }
+  ]
+}
