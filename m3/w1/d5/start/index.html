@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- BOOTSTRAP ICON-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <title>MyPhone_Davide</title>
+
+</head>
+
+<body>
+    <!-- CONTAINER TELEFONO -->
+    <div class="phone-container">
+        <!-- BOTTONE TELEFONO -->
+        <div id="btnClose" class="circle"></div>
+        <!-- CONTAINER ICONE -->
+        <div class="container-icon">
+            <!-- ICONA TELEFONO -->
+            <i id="btnChiamate" class="bi bi-telephone-fill"></i>
+            <!-- ICONA YOUTUBE -->
+            <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer"> <i
+                    class="bi bi-youtube"></i></a>
+            <!-- ICONA WHASTAPP -->
+            <div class="container-wa">
+                <a href="https://web.whatsapp.com/" target="_blank" rel="noopener noreferrer"><i
+                        class="bi bi-whatsapp"></i></a>
+            </div>
+            <!-- ICONA MESSAGGIO -->
+            <i id="btnMessage" class="bi bi-chat-left-fill"></i>
+        </div>
+        <!-- CRONOLOGIA CHIAMATA -->
+        <div class="container-chiamate d-none">
+            <div id="wrapper">
+                <h4>Chiamate</h4>
+                <h5 id="chiamaContatto"></h5>
+                <h6 id="numeroCell"></h6>
+            </div>
+        </div>
+        <!-- CHIAMATA -->
+        <div class="container-chiamata d-none">
+            <div class="profilo-utente">
+                <i class="bi bi-person-circle"></i>
+                <h3 id="nomeChiamata"></h3>
+                <h4 id="numeroChiamata"></h4>
+                <div class="timer">Chiamata in corso..</div>
+                <i id="attacca" class="bi bi-telephone-x-fill"></i>
+            </div>
+        </div>
+        <!-- MESSAGGIO -->
+        <div class="container-messaggio d-none">
+            <div class="messaggio">
+                <h4>Messaggi</h4>
+                <i id="btnIndietro" class="bi bi-arrow-right"></i>
+            </div>
+            
+
+            <div class="utente">
+                <h5 id="scriviContatto"><i class="bi bi-person-circle"></i>Servizio Clienti</h5>
+            </div>
+        </div>
+        <!-- MESSAGGIO CREDITO -->
+        <div class="container-credito d-none">
+            <div class="info">
+                <h5>Servizio Clienti</h5>
+                <i id="btnIndietro" class="bi bi-arrow-right"></i>
+            </div>
+
+            <div class="message d-none">
+                <p id="creditoResiduo"></p>
+            </div>
+            <div class="myMessage">
+                <form>
+                    <input id="messageCredito" type="text" placeholder="Messaggio...">
+                    <i id="inviaMessage" class="bi bi-plus-square-fill"></i>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- JS -->
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>

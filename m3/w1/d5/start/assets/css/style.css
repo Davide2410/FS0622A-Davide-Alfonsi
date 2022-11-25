@@ -1,0 +1,246 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: aliceblue;
+}
+
+/* IMPOSTAZIONI */
+.d-none {
+    display: none !important;
+}
+
+/* CONTAINER TELEFONO */
+.phone-container {
+    height: 400px;
+    width: 200px;
+    border: 4px solid grey;
+    border-radius: 5px;
+    background: url('https://ilblogperte.files.wordpress.com/2019/07/img_6237.jpg') center no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+
+/* BOTTONE TELEFONO */
+.phone-container .circle {
+    height: 13px;
+    width: 13px;
+    border: 1px solid white;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 1%;
+    left: 48%;
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+/*CONTAINER ICONE*/
+.container-icon {
+    height: 30px;
+    width: 100%;
+    position: absolute;
+    bottom: 6%;
+    display: flex;
+    justify-content: space-around;
+    font-size: 22px;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.bi-telephone-fill,
+.bi-chat-left-fill {
+    color: rgb(29, 109, 29);
+    cursor: pointer;
+}
+
+.bi-youtube {
+    color: red;
+    cursor: pointer;
+}
+
+.container-wa {
+    height: 25px;
+    width: 23px;
+    background-color: green;
+    font-size: 15px;
+    border-radius: 5px;
+    margin-top: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-wa .bi-whatsapp {
+    color: white;
+    cursor: pointer;
+}
+
+/* SCHERMATA CHIAMATE */
+.container-chiamate {
+    background-color: black;
+    height: 100%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+#wrapper {
+    margin-top: 20px;
+    margin-left: 10px;
+}
+
+#wrapper h4 {
+    margin-bottom: 20px;
+    color: rgb(38, 142, 38);
+}
+
+#wrapper h5 {
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+#wrapper h5 span {
+    font-size: 10px;
+    margin-left: 100px;
+}
+
+#wrapper h6 {
+    font-size: 10px;
+    color: lightgrey;
+}
+
+/* CONTAINER CIAMATA */
+.container-chiamata {
+    background-color: black;
+    color: white;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.container-chiamata .profilo-utente {
+    position: relative;
+    height: 60%;
+}
+
+.container-chiamata .profilo-utente .bi-person-circle {
+    font-size: 30px;
+    color: lightgreen;
+}
+
+.container-chiamata .profilo-utente h3 {
+    margin-bottom: 50px;
+}
+
+.container-chiamata .profilo-utente .bi-telephone-x-fill {
+    position: absolute;
+    bottom: 0;
+}
+
+.container-chiamata .profilo-utente .bi-telephone-x-fill {
+    color: red;
+}
+
+/* CONTAINER MESSAGGIO */
+.container-messaggio {
+    background-color: black;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+
+.container-messaggio .messaggio {
+    margin-top: 10px;
+    margin-left: 10px;
+    color: green;
+    display: flex;
+    justify-content: space-between;
+}
+.container-messaggio .messaggio i{
+ margin-right: 10px;   
+}
+
+
+.container-messaggio .utente {
+    margin-top: 20px;
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.container-messaggio .utente i {
+    margin-right: 10px;
+    color: lightgrey;
+}
+
+.container-messaggio .utente h5 {
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+/* MESSAGGIO CREDITO */
+.container-credito {
+    background-color: black;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+
+.container-credito .info {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container-credito .info h5 {
+    margin-left: 10px;
+}
+
+.container-credito .info .bi-arrow-right {
+    margin-right: 10px;
+    color: green;
+}
+
+.container-credito .message {
+    border: 1px solid lightgrey;
+    width: 50%;
+    margin-top: 20px;
+    margin-left: 10px;
+    font-size: 15px;
+    padding: 8px;
+    border-radius: 0px 10px 10px;
+    background-color: rgb(111, 106, 106);
+}
+
+.container-credito .myMessage {
+    position: absolute;
+    bottom: 10%;
+    left: 5%;
+    display: flex;
+}
+
+#btnIndietro {
+    cursor: pointer;
+}
+
+.container-credito .myMessage input {
+    width: 85%;
+}
+
+.bi-plus-square-fill {
+    color: green;
+    font-size: 18px;
+}
