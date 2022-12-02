@@ -1,0 +1,15 @@
+<div class="card mb-3" [ngClass]="{
+    'bg-warning': p.type == 'news',
+    'bg-info': p.type == 'education',
+    'bg-dark': p.type == 'politic',
+    'text-white': p.type == 'politic'
+  }">
+    <h5 class="card-header">{{p.id}} | <span appEvidenzia [defaultColor]="'white'" class="p-1 text-danger">{{p.type}}</span> </h5>
+    <div class="card-body">
+        <h5 class="card-title">{{p.title | maiuscolo }}</h5>
+        <p class="card-text">{{p.body}}</p>
+    </div>
+    <ng-content></ng-content>
+
+    <button class="btn btn-danger w-25 mx-auto mt-2 mb-2" (click)="elimina()">Elimina</button>
+</div>

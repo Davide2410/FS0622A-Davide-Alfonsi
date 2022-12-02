@@ -1,0 +1,12 @@
+<div class="container mt-4">
+    <div class="row justify-content-center align-items-center text-center">
+        <div class="col-4">
+            <ul *ngFor="let user of users" class="mb-5">
+                <li><a [routerLink]="['user/'+ user.id]" routerLinkActive="active"
+                        (click)="paginaDettaglio(user.id)">{{user.nome}}</a> </li>
+                <hr>
+            </ul>
+        </div>
+    </div>
+</div>
+<router-outlet></router-outlet>
