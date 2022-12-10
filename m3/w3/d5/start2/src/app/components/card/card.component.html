@@ -1,0 +1,5 @@
+
+<div class="d-flex flex-column text-center align-items-center">
+    <img mat-card-image src="http://image.tmdb.org/t/p/w500/{{m.poster_path}}" class="w-75">
+    <button class="fs-2 mb-5" mat-button (click)="isFav ? removeFav() : addFav(m.id, i)" [color]=" isFav ? 'warn': ''">&#9829;</button>
+</div>

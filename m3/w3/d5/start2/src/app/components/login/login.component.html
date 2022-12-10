@@ -1,0 +1,30 @@
+<div class="container d-flex flex-column align-items-center justify-content-center vh-100 pt-5">
+    <mat-card class="example-card">
+        <mat-card-header class="d-flex py-3">
+            <mat-card-title>Login</mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+            <form #form="ngForm" (ngSubmit)="login(form)">
+
+                <mat-form-field appearance="outline">
+                    <mat-label>Email</mat-label>
+                    <input matInput type="text" required name="email" ngModel id="email">
+                </mat-form-field>
+
+                <mat-form-field appearance="outline">
+                    <mat-label>Password</mat-label>
+                    <input matInput type="password" required name="password" ngModel id="password">
+                </mat-form-field>
+
+                <button mat-raised-button color="accent" type="submit" [disabled]="form.invalid">Login</button>
+
+                <a mat-button color="accent" [routerLink]="['/register']">Registrati</a>
+            </form>
+        </mat-card-content>
+
+        <mat-card-footer>
+            <h2 *ngIf=" err" class="text-danger text-center mt-3">{{err}}</h2>
+        </mat-card-footer>
+    </mat-card>
+
+</div>

@@ -1,0 +1,16 @@
+<mat-drawer-container class="example-container">
+    <mat-drawer mode="side" opened>
+
+        <h2 class="ms-3 border-bottom">Menu</h2>
+
+        <mat-drawer-container class="w-50 mx-auto">
+        <a mat-button [routerLink]="['/movies']" routerLinkActive="active">Movies</a>
+        <a mat-button [routerLink]="['/profilo']" routerLinkActive="active">Profilo</a>
+        <a mat-button (click)="logout()" class="text-danger">Esci</a>
+        </mat-drawer-container>
+    </mat-drawer>
+    <mat-drawer-content>
+        <h1 class="header">Ciao, {{name}}</h1>
+        <router-outlet></router-outlet>
+    </mat-drawer-content>
+</mat-drawer-container>
