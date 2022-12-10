@@ -1,0 +1,138 @@
+@import 'functions';
+@import 'mixin';
+@import 'variables';
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: $textColor;
+}
+
+body {
+    padding: 2em;
+    font-size: em(18px);
+}
+
+header {
+    display: flex;
+    align-items: center;
+    background-color: $themeColor;
+    border: 1px solid white;
+    height: $headerHeight;
+    box-shadow: 5px 5px 5px #f6bc7d;
+    border-radius: 15px;
+    padding-left: 20px;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 15px;
+}
+
+#main {
+    padding-top: 50px;
+    margin: 0 auto;
+    display: flex;
+    width: colwidth(8);
+
+    a {
+        color: $linkColor;
+    }
+
+    @include medium-screens() {
+        display: block;
+    }
+}
+
+#content {
+    width: $contentWidth;
+
+    h2 {
+        padding-top: $spacing;
+    }
+
+    p {
+        padding-top: $spacing;
+    }
+
+    #introduction {
+        padding-top: $spacing;
+
+        button {
+            color: $textColor;
+            border: none;
+            padding: 10px;
+            background-color: $linkColor;
+            margin-top: $spacing;
+            box-shadow: 5px 5px 5px #f6bc7d;
+        }
+    }
+
+    #promo {
+        padding-top: $spacing;
+    }
+}
+
+#sidebar {
+    display: flex;
+    justify-content: center;
+
+    ul {
+        padding: 0 20px;
+
+        @include medium-screens() {
+            padding: 0;
+            text-align: center;
+        }
+    }
+
+    li {
+        padding-top: $spacing;
+        border-bottom: 2px dashed gray;
+    }
+
+    @include medium-screens() {
+        display: block;
+    }
+}
+
+blockquote {
+    padding-left: 35px;
+
+    footer {
+        padding-top: $spacing
+    }
+}
+
+form {
+    padding-top: $spacing;
+
+    fieldset {
+        padding: $spacing;
+
+        input {
+            margin-bottom: $spacing;
+        }
+
+        input:focus,
+        textarea:focus {
+            outline: 2px solid aqua;
+        }
+
+    }
+}
+
+#footer {
+    margin-top: 25px;
+    background-color: lightblue;
+    height: $footerHeight;
+}

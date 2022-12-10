@@ -1,0 +1,46 @@
+<div class="container">
+    <div class="row justify-content-center align-items-center">
+        <div class="col-6">
+            <form #f="ngForm" (ngSubmit)="submit(f)">
+                <div class="mb-3">
+                    <label class="form-label">Nome</label>
+                    <input type="text" class="form-control" name="nome" ngModel>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Alterego</label>
+                    <input type="text" class="form-control" ngModel>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Potere</label>
+                    <select class="form-select" name="potere" ngModel>
+                        <option *ngFor="let o as options" value="{{o}}">
+                            {{o}}
+                        </option>
+                      </select>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Debolezza</label>
+                    <input type="text" class="form-control" name="debolezza" ngModel>
+                </div>
+                <div class="alert alert-danger" role="alert" *ngIf="nemico.invalid">
+                    Required
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Nemico</label>
+                    <input type="text" maxlength="10" class="form-control" name="nemico" ngModel #nemico="ngModel">
+                    <div *ngIf="nemico.errors">
+                        <div class="alert alert-danger" role="alert" *ngIf="nemico.errors['maxlength']">
+                            Massimo 10 caratteri
+                        </div>
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Pianeta</label>
+                    <input type="text" class="form-control" name="Pianeta" ngModel>
+                </div>
+                <button type="submit" class="btn btn-success">Invia</button>
+            </form>
+        </div>
+    </div>
+</div>
+<h1>Nome:{{nemico}}</h1>

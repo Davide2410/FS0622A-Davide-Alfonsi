@@ -1,0 +1,82 @@
+{
+    "roma": [
+
+        {
+            "id" : 1,
+            "nome" : "Rui",
+            "cognome" : "Patricio",
+            "ruolo" : "Portiere"
+        },
+    
+        {
+            "id" : 2,
+            "nome" : "Roger",
+            "cognome" : "Ibanez",
+            "ruolo" : "Difensore"
+        },
+    
+        {
+            "id" : 3,
+            "nome" : "Gianluca",
+            "cognome" : "Mancini",
+            "ruolo" : "Difensore"
+        },
+    
+        {
+            "id" : 4,
+            "nome" : "Chris",
+            "cognome" : "Smalling",
+            "ruolo" : "Difensore"
+        },
+    
+        {
+            "id" : 5,
+            "nome" : "Ricky",
+            "cognome" : "Kardsorp",
+            "ruolo" : "Difensore"
+        },
+    
+        {
+            "id" : 6,
+            "nome" : "Leonardo",
+            "cognome" : "Spinazzola",
+            "ruolo" : "Difensore"
+        },
+    
+        {
+            "id" : 7,
+            "nome" : "Bryan",
+            "cognome" : "Cristante",
+            "ruolo" : "Centrocampista"
+        },
+    
+        {
+            "id" : 8,
+            "nome" : "Lorenzo",
+            "cognome" : "Pellegrini",
+            "ruolo" : "Centrocampista"
+        },
+    
+        {
+            "id" : 9,
+            "nome" : "Nicolò",
+            "cognome" : "Zaniolo",
+            "ruolo" : "Attaccante"
+        },
+    
+        {
+            "id" : 10,
+            "nome" : "Paulo",
+            "cognome" : "Dybala",
+            "ruolo" : "Attaccante"
+        },
+    
+        {
+            "id" : 11,
+            "nome" : "Tammy",
+            "cognome" : "Abrham",
+            "ruolo" : "Attaccante"
+        }
+    
+    ]
+}

@@ -1,0 +1,7 @@
+@function em($pixel, $context: 16px) {
+    @return($pixel/$context)*1em;
+}
+
+@function colwidth($col, $columns: 12, $pagewidth: 100%, $gap: 1%) {
+    @return (($pagewidth - $gap)/$columns)*$col;
+}

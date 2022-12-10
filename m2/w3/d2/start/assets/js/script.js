@@ -22,6 +22,14 @@ p2.ConfrontaEta(p3);
 
 
 // ----------------------------------------------
+class Pagina{
+    constructor(_items = [] , _pageSize = 10){
+        this.items = _items;
+        this.pageSize = _pageSize;
+    }
+}
+
+
 
 const users = [
     { id: 1, nome: 'Luca', cognome: 'Rossi', classe: 'A' },
@@ -33,6 +41,13 @@ const users = [
     { id: 7, nome: 'Gianni', cognome: 'Bianchi', classe: 'A' },
     { id: 8, nome: 'Davide', cognome: 'Neri', classe: 'A' },
 ];
+
+let p = new Pagina();
+let p1 = new Pagina(users);
+let p2 = new Pagina(users , 3);
+let p3 = new Pagina(users , 5);
+
+
 
 let nomi = document.getElementById('nomi');
 
@@ -46,9 +61,3 @@ users.forEach(user => {
     nomi.innerHTML += ` ${riga1} ${riga2} ${riga3} ${riga4}`;
 });
 
-// class Users{
-//     constructor(_items , _pageSize){
-//         this.items = _items;
-//         this.pageSize = _pageSize;
-//     }
-// }

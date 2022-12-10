@@ -1,0 +1,124 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+body {
+  padding: 2em;
+  font-size: 1.125em;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  background-color: navy;
+  border: 1px solid white;
+  height: 50px;
+  box-shadow: 5px 5px 5px #f6bc7d;
+  border-radius: 15px;
+  padding-left: 20px;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 15px;
+}
+
+#main {
+  padding-top: 50px;
+  margin: 0 auto;
+  display: flex;
+  width: 66%;
+}
+#main a {
+  color: orange;
+}
+@media only screen and (max-width: 768px) {
+  #main {
+    display: block;
+  }
+}
+
+#content {
+  width: 85%;
+}
+#content h2 {
+  padding-top: 20px;
+}
+#content p {
+  padding-top: 20px;
+}
+#content #introduction {
+  padding-top: 20px;
+}
+#content #introduction button {
+  color: white;
+  border: none;
+  padding: 10px;
+  background-color: orange;
+  margin-top: 20px;
+  box-shadow: 5px 5px 5px #f6bc7d;
+}
+#content #promo {
+  padding-top: 20px;
+}
+
+#sidebar {
+  display: flex;
+  justify-content: center;
+}
+#sidebar ul {
+  padding: 0 20px;
+}
+@media only screen and (max-width: 768px) {
+  #sidebar ul {
+    padding: 0;
+    text-align: center;
+  }
+}
+#sidebar li {
+  padding-top: 20px;
+  border-bottom: 2px dashed gray;
+}
+@media only screen and (max-width: 768px) {
+  #sidebar {
+    display: block;
+  }
+}
+
+blockquote {
+  padding-left: 35px;
+}
+blockquote footer {
+  padding-top: 20px;
+}
+
+form {
+  padding-top: 20px;
+}
+form fieldset {
+  padding: 20px;
+}
+form fieldset input {
+  margin-bottom: 20px;
+}
+form fieldset input:focus,
+form fieldset textarea:focus {
+  outline: 2px solid aqua;
+}
+
+#footer {
+  margin-top: 25px;
+  background-color: lightblue;
+  height: 100px;
+}/*# sourceMappingURL=style.css.map */
